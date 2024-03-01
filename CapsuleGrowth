@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CapsuleGrowth : MonoBehaviour
+{
+    [SerializeField] private float growthRate = 1.0f;
+
+    private void Update()
+    {
+        transform.localScale += Vector3.one * growthRate * Time.deltaTime;
+    }
+}
